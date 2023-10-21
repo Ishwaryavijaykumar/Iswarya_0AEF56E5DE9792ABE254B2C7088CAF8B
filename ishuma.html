@@ -1,0 +1,74 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;College Admission&lt;/title&gt;
+&lt;style&gt;
+/* Define your CSS styles here */
+/* Example: */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #007ACC;
+color: #FFF;
+text-align: center;
+padding: 20px;
+}
+nav {
+background-color: #333;
+color: #FFF;
+padding: 10px;
+}
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;h1&gt;Welcome to College Admission&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;showPage(&#39;home&#39;)&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;showPage(&#39;admission&#39;)&quot;&gt;Admission&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;showPage(&#39;contact&#39;)&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+&lt;section id=&quot;home&quot;&gt;
+&lt;h2&gt;Home&lt;/h2&gt;
+&lt;p&gt;Welcome to our college admission website. Learn more about our programs and
+admission process.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;admission&quot; style=&quot;display: none;&quot;&gt;
+&lt;h2&gt;Admission&lt;/h2&gt;
+&lt;p&gt;Explore our admission requirements and submit your application to join our college.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;contact&quot; style=&quot;display: none;&quot;&gt;
+&lt;h2&gt;Contact&lt;/h2&gt;
+&lt;p&gt;If you have any questions or need assistance, feel free to contact us.&lt;/p&gt;
+&lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+&amp;copy; 2023 College Admission
+&lt;/footer&gt;
+&lt;script&gt;
+// JavaScript for showing/hiding content
+function showPage(pageName) {
+document.querySelectorAll(&#39;section&#39;).forEach(section =&gt; {
+section.style.display = &#39;none&#39;;
+});
+document.getElementById(pageName).style.display = &#39;block&#39;;
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
